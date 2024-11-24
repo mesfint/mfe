@@ -33,6 +33,8 @@ jobs:
       - name: Build container
         run: pnpm run build
 
+      - run: echo 'ACTIONS_ALLOW_UNSECURE_COMMANDS=true' >> $GITHUB_ENV
+
       # Define AWS CLI
       - name: Set up AWS CLI
         uses: chrislennon/action-aws-cli@v1.1
