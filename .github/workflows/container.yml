@@ -27,11 +27,11 @@ jobs:
 
       # Install dependencies using pnpm
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       # Build the container
       - name: Build container
-        run: pnpm run build
+        run: npm run build
 
       # Define AWS CLI
       - name: Set up AWS CLI
