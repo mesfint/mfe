@@ -35,7 +35,7 @@ jobs:
 
       # Define AWS CLI
       - name: Set up AWS CLI
-        uses: mestech/action-aws-cli@v1.1
+        uses: chrislennon/action-aws-cli@v1.1
 
       # Deploy the container to S3 bucket
       - name: Deploy to S3
